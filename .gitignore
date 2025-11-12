@@ -1,0 +1,60 @@
+# ===============================
+# 🐍 Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environments
+.env/
+.venv/
+venv/
+# ===============================
+# 🐳 Docker
+# ===============================
+
+# Docker volumes and local data
+volumes/
+data/
+logs/
+
+# ===============================
+# ☁️ Airflow
+# ===============================
+# Airflow local files (don’t commit scheduler/db files)
+airflow.db
+airflow-webserver.pid
+airflow.cfg
+unittests.cfg
+logs/
+dags/__pycache__/
+plugins/__pycache__/
+
+# ===============================
+# 🔐 Credentials & Secrets
+# ===============================
+# Environment files
+.env
+.env.*
+secrets/
+*.key
+*.pem
+*.crt
+
+# ===============================
+# 🧱 Databases / Dumps
+# ===============================
+*.sqlite
+*.db
+*.dump
+*.sql
+*.csv
+*.parquet
+*.json
+*.xlsx
+*.ipynb
+*.cmd.*
