@@ -58,3 +58,7 @@ secrets/
 *.xlsx
 *.ipynb
 *.cmd.*
+
+scripts/*
+logs/
+p4/

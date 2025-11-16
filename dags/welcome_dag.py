@@ -11,9 +11,9 @@ def print_date():
     print('Today is {}'.format(datetime.today().date()))
 
 def print_random_quote():
-    response = requests.get('https://api.quotable.io/random')
-    quote = response.json()['content']
-    print('Quote of the day: "{}"'.format(quote))
+    #response = requests.get('https://api.quotable.io/random')
+    #quote = response.json()['content']
+    print('Bye Bye Airflow!')
 
 dag = DAG(
     'welcome_dag',

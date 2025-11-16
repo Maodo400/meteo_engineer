@@ -5,7 +5,7 @@ from pandas import json_normalize
 
 def fetch_weather_data(lat="48.858370", lon="2.294481"):
     """Récupère les données météo depuis l'API OpenWeather"""
-    api_key = "5a81b86257c58da964a779f348591c7a"
+    api_key = api_key
     url = f"https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude=hourly,daily&appid={api_key}"
 
     response = requests.get(url)

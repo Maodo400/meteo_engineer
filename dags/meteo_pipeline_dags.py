@@ -18,11 +18,11 @@ default_args = {
 
 def fetch_and_load():
     # Créer la chaîne de connexion PostgreSQL
-    db_user = "postgres"
-    db_password = "passer"
-    db_host = "localhost"
+    db_user = "airflow"
+    db_password = "airflow"
+    db_host = "postgres"
     db_port = "5432"
-    db_name = "meteo_db"
+    db_name = "airflow"
 
     # Connexion via SQLAlchemy
     engine = create_engine(f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")

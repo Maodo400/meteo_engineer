@@ -27,6 +27,7 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./app:/opt/airflow/app
+      - ./logs:/opt/airflow/logs
     ports:
       - "8080:8080"
     command: airflow webserver
@@ -41,4 +42,6 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./app:/opt/airflow/app
+      - ./logs:/opt/airflow/logs
+      - ./app/.env:/opt/airflow/.env
     command: airflow scheduler

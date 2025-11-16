@@ -65,7 +65,7 @@ meteo_tab = Table(
     Column("humidity", Float),
     Column("dew_point", Float),
     Column("uvi", Float),
-    Column("clouds", Float),
+    Column("clouds", Float), 
     Column("visibility", Float),
     Column("wind_speed", Float),
     Column("wind_deg", Float),
